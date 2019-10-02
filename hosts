@@ -1,6 +1,6 @@
 # Please check roles/common/vars/leofs_releases for available versions
 [all:vars]
-leofs_version=1.2.22
+leofs_version=1.4.3
 build_temp_path="/tmp/leofs_builder"
 build_install_path="/tmp/"
 build_branch="master"
