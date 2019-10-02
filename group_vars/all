@@ -1,5 +1,5 @@
 ---
-# 
+#
 # Required: LeoManagers Information
 # Erlang node name format {sname}@{host}
 #
@@ -7,3 +7,10 @@ leo_manager_0_nodename: leo_manager_0@{{ groups['leo_manager_0'][0] }}
 leo_manager_1_nodename: leo_manager_1@{{ groups['leo_manager_1'][0] }}
 leo_managers: "[{{ leo_manager_0_nodename }}, {{ leo_manager_1_nodename }}]"
 build_host: "{{ groups['builder'][0] }}"
+
+# Please check roles/common/vars/leofs_releases for available versions
+leofs_version: 1.4.3
+build_temp_path: "/tmp/leofs_builder"
+build_install_path: "/tmp/"
+build_branch: "master"
+source: "package"
