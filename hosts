@@ -2,3 +2,6 @@ hosts:
  127.0.0.1:
   vars:
    ansible_connection: local
+
+ [builder]
+ 127.0.0.1
