@@ -1,5 +1,5 @@
 # Please check roles/common/vars/leofs_releases for available versions
 hosts:
-  localhost:
-   vars:
-     ansible_connection: local
+  localhost
+  vars:
+   ansible_connection: local
