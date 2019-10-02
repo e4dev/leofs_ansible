@@ -4,7 +4,7 @@ leofs_version=1.4.3
 build_temp_path="/tmp/leofs_builder"
 build_install_path="/tmp/"
 build_branch="master"
-source="build"
+source="package"
 
 [builder]
 127.0.0.1 ansible_connection=local
