@@ -1,5 +1,4 @@
-# Please check roles/common/vars/leofs_releases for available versions
-hosts:
-  localhost
-  vars:
-   ansible_connection: local
+---
+- hosts: 127.0.0.1
+  connection: local
+  become: yes
