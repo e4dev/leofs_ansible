@@ -19,7 +19,7 @@ leofs_num_of_replica=1
 127.0.0.1 ansible_connection=local
 
 [leo_storage]
-127.0.0.1 ansible_connection=local leofs_module_nodename=storage_0@127.0.0.1
+127.0.0.1 ansible_connection=local leofs_storage_module_nodename=storage_0@127.0.0.1
 
 [leo_gateway]
 127.0.0.1 ansible_connection=local leofs_module_nodename=gateway_0@127.0.0.1

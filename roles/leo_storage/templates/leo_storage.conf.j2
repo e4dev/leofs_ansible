@@ -51,7 +51,7 @@ managers = {{ leo_managers }}
 ## e.g. Case of plural pathes
 ## obj_containers.path = [/var/leofs/avs/1, /var/leofs/avs/2]
 ## obj_containers.num_of_containers = [32, 64]
-obj_containers.path = [{{ leo_storage_container_paths|join(",") }}] 
+obj_containers.path = [{{ leo_storage_container_paths|join(",") }}]
 obj_containers.num_of_containers = [{{ leo_storage_num_of_containers|join(",") }}]
 
 ## Metadata Storage: [bitcask, leveldb] - default:leveldb
@@ -144,7 +144,7 @@ watchdog.disk.raised_error_times = {{ leofs_watchdog_disk_error_times }}
 
 ## disk - watch interval - default:1sec
 ## watchdog.disk.interval = 1
-watchdog.disk.interval = {{ leofs_watchdog_disk_interval }} 
+watchdog.disk.interval = {{ leofs_watchdog_disk_interval }}
 
 ## Threshold use(%) of a target disk's capacity - defalut:85%
 ## watchdog.disk.threshold_disk_use = 85
@@ -454,7 +454,7 @@ leo_statistics.profile = {{ leo_profiler_stat|lower }}
 ## For vm.args
 ##======================================================================
 ## Name of the leofs-storage node
-nodename = {{ leofs_module_nodename }}
+nodename = {{ leofs_storage_module_nodename }}
 
 ## Cookie for distributed node communication.  All nodes in the same cluster
 ## should use the same cookie or they will not be able to communicate.
