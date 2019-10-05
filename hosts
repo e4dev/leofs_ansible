@@ -20,6 +20,10 @@ source="package"
 
 [leo_storage]
 127.0.0.1 ansible_connection=local leofs_module_nodename=S0@127.0.0.1
+127.0.0.1 ansible_connection=local leofs_module_nodename=S1@127.0.0.1
+127.0.0.1 ansible_connection=local leofs_module_nodename=S2@127.0.0.1
+127.0.0.1 ansible_connection=local leofs_module_nodename=S3@127.0.0.1
+127.0.0.1 ansible_connection=local leofs_module_nodename=S4@127.0.0.1
 
 [leo_gateway]
 127.0.0.1 ansible_connection=local leofs_module_nodename=G0@127.0.0.1
