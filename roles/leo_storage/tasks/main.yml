@@ -5,11 +5,15 @@
       state: directory
       owner: leofs
       group: leofs
-  with_items: 
-      - "{{ leo_storage_container_paths }}" 
+  with_items:
+      - "{{ leo_storage_container_paths }}"
   when: control_leofs is undefined and do_purge is undefined and get_log is undefined
   tags:
       - config
+
+- name: "Ansible | Print a variable"
+  debug:
+    msg: "!!!!!!!!!!!!!!!!!!!!!!!!!!! {{ leofs_module_nodename }}"
 
 - name: Create the LeoStorage Configuration File
   template: src=leo_storage.conf.j2 dest={{ leofs_module_conf_path }}/leo_storage.conf
@@ -30,4 +34,3 @@
       src: "{{ leo_storage_avs_archive }}"
       dest: "{{ leo_storage_container_paths[0] }}/../"
   when: send_avs is defined and send_avs
-
