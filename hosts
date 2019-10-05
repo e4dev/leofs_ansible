@@ -6,7 +6,7 @@ build_install_path="/tmp/"
 build_branch="master"
 source="package"
 leo_gateway_protocol="rest"
-num_of_replicas=1
+leofs_num_of_replica=1
 [builder]
 127.0.0.1 ansible_connection=local
 
