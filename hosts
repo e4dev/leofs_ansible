@@ -27,5 +27,5 @@ leofs_num_of_replica=1
 [leofs_nodes:children]
 leo_manager_0
 leo_manager_1
-#leo_gateway
-#leo_storage
+leo_gateway
+leo_storage
