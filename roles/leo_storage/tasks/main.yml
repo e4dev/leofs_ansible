@@ -13,7 +13,7 @@
 
 - name: "Ansible | Print a variable"
   debug:
-    msg: "!!!!!!!!!!!!!!!!!!!!!!!!!!! {{ leofs_module_nodename }}"
+    msg: "!!!!!!!!!!!!!!!!!!!!!!!!!!! {{ leofs_storage_module_nodename }}"
 
 - name: Create the LeoStorage Configuration File
   template: src=leo_storage.conf.j2 dest={{ leofs_module_conf_path }}/leo_storage.conf
