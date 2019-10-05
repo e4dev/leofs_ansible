@@ -15,8 +15,8 @@ leo_gateway_protocol="rest"
 127.0.0.1 ansible_connection=local
 
 # nodename of leo_manager_0 and leo_manager_1 are set at group_vars/all
-#[leo_manager_1]
-#127.0.0.1 ansible_connection=local
+[leo_manager_1]
+127.0.0.1 ansible_connection=local
 
 [leo_storage]
 127.0.0.1 ansible_connection=local leofs_module_nodename=S0@127.0.0.1
@@ -26,6 +26,6 @@ leo_gateway_protocol="rest"
 
 [leofs_nodes:children]
 leo_manager_0
-#leo_manager_1
+leo_manager_1
 leo_gateway
 leo_storage
