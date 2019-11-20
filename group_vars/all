@@ -21,7 +21,8 @@ leo_gateway_http_timeout_for_body: 60000
 
 leofs_access_log: "true"
 
-leo_storage_container_paths: "/leofs_storage_root"
+leo_storage_container_paths: 
+ - "/leofs_storage_root/data"
 
 
 
